@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios sem aula</title>
+    <style>
+        input {
+            width: 50px;
+        }
+        div#area2 {
+          background: blue;
+          width: 120px;
+        }
+    </style>
+</head>
+<body>
+  <input type="button" value="clicar" id="cliquei" onclick="clicar()">
+  <input type="button" value="botao" id="buttan" onclick="clique()">
+  <div id="nao">
+    <p>Você ainda não clicou</p>
+  </div>
+  <div id="area2">
+    <h1>VAMO, CLICA LOGO!</h1>
+  </div>
+  <div>
+    <p>Agora que você clicou em todos os botões, veja alguns tópicos abaixo:</p>
+    <p> -A matemática é a matéria mais difícil da escola</p>
+    <p> -Física é a matéria mais odiada pelos alunos</p>
+    <p> -Todo número elevado a 0 é 1</p>
+    <p> -Todo número multiplicado por 0 é 0</p>
+    <p> -Este site foi feito apenas para diversão, mas de vez em quando vou atualizar ele </p>
+    <p>Caso queira falar comigo, coloque no discord Winxtames#1033</p>
+  </div>
+  <script>
+    function clicar() {
+        var outrotexto = window.document.getElementById("area2")
+        outrotexto.innerHTML = "FINALMENTE!!!"
+        
+    }
+
+    function clique() {
+        var texto = window.document.getElementById("nao")
+        texto.innerHTML = "Pronto, clicou!"
+    }
+    
+    
+  </script>
+</body>
+</html>
